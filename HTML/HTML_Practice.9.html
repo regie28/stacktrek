@@ -1,0 +1,38 @@
+<!--Puzzle
+Construct this puzzle looking thing. It will exercise your knowledge of colspan and rowspan. It's not as easy as it looks. Keep at it until you work it out.
+
+Note that the bottom cell is empty but not missing.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+</head>
+<body>
+    <h3>Puzzle</h3>
+    <div style="border:2px solid gray; box-sizing: border-box; width: 15rem">
+    <table style="border:1px solid gray; box-shadow: 2px 2px">
+        <tr>
+            <td colspan="3" style="border:1px solid gray; padding:5px;text-align:center;"><strong>Top</strong>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="border:1px solid gray; padding:5px;text-align:center;">way left</td>
+            <td style="border:1px solid gray; padding:5px;text-align:center;">middle up</td>
+            <td rowspan="2" style="border:1px solid gray; padding:5px;text-align:center;">way right</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid gray; padding:5px;text-align:center;">middle down</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="border:1px solid gray; padding:5px;text-align:center;">&nbsp</td>
+        </tr>
+
+    </table>
+    </div>
+</body>
+</html>
