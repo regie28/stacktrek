@@ -1,0 +1,23 @@
+body {
+    box-sizing:content-box;
+    margin: 2rem;
+    padding-left: 20px;
+}
+#celsius {
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+}
+
+#button {
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+}
+
+#fahrenheit {
+    width: 30%;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+}
