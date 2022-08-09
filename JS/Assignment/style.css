@@ -34,6 +34,21 @@ body {
 .profile-details {
     display: none;
 }
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen  and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
 .button {
     
   border-radius: 3em;
