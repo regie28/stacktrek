@@ -1,6 +1,78 @@
+const info = {
+    name: "Hi I'am Reginald",
+    career: "Tech Staff : Aspiring Full Stack Developer",
+    hobbies: ["Playing Dota 2", "Reading Manga/Manhwa", "Watching Movies", "Watching Anime", "Playing Chess"],
+    food: ["Adobo", "Chicken Curry", "Afritada", "Burger", "Pancit"],
+    tvSeries : ["One Piece","Breaking Bad", "Futurama", "Dr.Stone", "Berserk", ],
+    movies: ["Green Mile", "Forest Gump", "Lord of The Rings", "The Hobbit", "Spirited Away"],
+}
+
+let displayMoreInfo = false
+
+function infoList() {
+    const name = document.querySelector('.name')
+    const career = document.querySelector('.career')
+    const hobbies = document.querySelector('.hobbies')
+    const food = document.querySelector('.food')
+    const tvSeries = document.querySelector('.tvSeries')
+    const movies = document.querySelector('.movies')
+
+    name.innerHTML = info.name
+    career.innerHTML = info.career
+    createList(hobbies, info.hobbies)
+    createList(food, info.food)
+    createList(tvSeries, info.tvSeries)
+    createList(movies, info.movies)
+}
+
+function toggleInfo() {
+    const hobbies = document.querySelector('.hobbies')
+    const food = document.querySelector('.food')
+    const tvSeries = document.querySelector('.tvSeries')
+    const movies = document.querySelector('.movies')
+    const card = document.querySelector('.row')
+
+    displayMoreInfo = !displayMoreInfo
+    setVisibility(displayMoreInfo, hobbies, food, tvSeries, movies, card)
+    
+}
+
+function createList(elementList, list) {
+    list.forEach(element => {
+        let node = document.createElement("li")
+        let textnode = document.createTextNode(element)
+        node.appendChild(textnode)
+        elementList.appendChild(node)
+    })
+}
+
+function setVisibility(isVisible, ...element) {
+    element.forEach(e => {
+        e.style.display = (isVisible) ? "block" : "none"
+    })
+}
+/*
 let btn = document.querySelector('.button');
-let text = document.querySelector('.profile-details')
+let card = document.querySelectorAll('.profile-details')
 
 btn.addEventListener('click', function() {
-    text.classList.toggle('profile-details');
+    card.classList.toggle('profile-details');
 });
+*/
+
+let minusButton = document.querySelector('.minus');
+let plusButton = document.querySelector('.plus');
+let numberPlace = document.querySelector('.numberPlacer');
+
+let counter = 0;
+numberPlace.innerHTML = counter;
+
+minusButton.addEventListener('click', function() {
+   counter -= 1;
+   numberPlace.innerHTML = counter;
+})
+
+plusButton.addEventListener('click', function() {
+    counter += 1;
+    numberPlace.innerHTML = counter;
+})
