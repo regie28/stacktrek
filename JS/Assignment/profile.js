@@ -68,11 +68,12 @@ let counter = 0;
 numberPlace.innerHTML = counter;
 
 minusButton.addEventListener('click', function() {
-   counter -= 1;
-   numberPlace.innerHTML = counter;
+        counter--
+        numberPlace.innerHTML = counter; 
+    
 })
 
 plusButton.addEventListener('click', function() {
-    counter += 1;
+    counter++
     numberPlace.innerHTML = counter;
 })
