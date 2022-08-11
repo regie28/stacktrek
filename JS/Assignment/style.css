@@ -78,11 +78,22 @@ p::after {
     content: "\a";
     white-space: pre;
 }
-ul {
+.tvSeries {
     font-size: 1.5vh;
     padding: 20px;
 }
-
+.hobbies {
+    font-size: 3vh;
+    padding: 30px;
+}
+.food {
+    font-size: 3.5vh;
+    padding: 30px;
+}
+.movies {
+    font-size: 2.5vh;
+    padding: 30px;
+}
 .content2 {
   position: fixed;
   left: 50%;
@@ -110,8 +121,8 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-    
 }
+
 .footer {
     font-size: 3vh;
     position: fixed;
