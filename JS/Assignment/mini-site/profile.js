@@ -1,6 +1,6 @@
 const info = {
     name: "Hi I'am Reginald",
-    career: "Tech Staff : Aspiring Web Developer",
+    career: "Tech Staff : Aspiring Full Stack Web Developer",
     hobbies: ["Playing Dota 2", "Reading Manga/Manhwa", "Watching Movies", "Watching Anime", "Playing Chess"],
     food: ["Adobo", "Chicken Curry", "Afritada", "Burger", "Pancit", "Lechon"],
     tvSeries : ["One Piece","Breaking Bad", "Futurama", "Dr.Stone", "Berserk", "Young Sheldon", "Family Guy", "The Boys", "The Walking Dead", "The Mentalist", "The Mandalorian", "Kimetsu No Yaiba", "The God of High School", "Hunter X Hunter", "The Bing Bang Theory"],
