@@ -15,7 +15,8 @@ body {
 nav li {
     display: inline-block;
     margin: 0 10px;
+    cursor: pointer;
 }
-li:hover{
+nav li:hover{
     background-color: #9ED2C6;
 }
