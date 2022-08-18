@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #54BAB9;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu {
+   margin-left: auto;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+li:hover{
+    background-color: #9ED2C6;
+}
