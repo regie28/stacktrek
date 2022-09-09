@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #a5e9e1;
+}
+.minutes {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10% 10% 10% 10%;
+    font-size: 5rem;
+    text-align: center;
+}
+.seconds {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10% 10% 10% 10%;
+    font-size: 5rem;
+    text-align: center;
+}
+.rocket{
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10% 10% 10% 10%;
+}
+.rocket{
+    display:none;
+}
